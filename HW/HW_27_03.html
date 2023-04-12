@@ -1,0 +1,15 @@
+<script>
+    function countLetters(str) {
+      let letters = {};
+      for (let i = 0; i < str.length; i++) {
+          if (letters[str[i]] === undefined) {
+              letters[str[i]] = 1;
+          } else {
+              letters[str[i]]++;
+          }
+      }
+      return letters;
+  }
+  
+  console.log(countLetters("тратата банатата"));
+  </script>
